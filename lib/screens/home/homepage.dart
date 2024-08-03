@@ -10,6 +10,10 @@ class Homepagescreen extends StatefulWidget {
 class _HomepagescreenState extends State<Homepagescreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Scaffold(
+      body:Container(
+        decoration: ,
+      )
+    );
   }
 }
