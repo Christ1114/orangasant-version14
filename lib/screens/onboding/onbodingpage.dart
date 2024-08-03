@@ -4,22 +4,29 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:oranga_sante1/screens/home/homepage.dart';
 
-class OnbodingPageScreen extends StatefulWidget {
-  const OnbodingPageScreen({super.key});
-// this page used for screen_splash
+class OnboardingPageScreen extends StatefulWidget {
+  const OnboardingPageScreen({super.key});
+
   @override
-  State<OnbodingPageScreen> createState() => _OnbodingPageScreenState();
+  State<OnboardingPageScreen> createState() => _OnboardingPageScreenState();
 }
 
-class _OnbodingPageScreenState extends State<OnbodingPageScreen> {
+class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
   @override
   void initState() {
     super.initState();
-    // this is the shift who will run the homepagescreen after
+    // Cette partie exécutera la navigation vers la page d'accueil après 20 secondes
     Timer(
-        const Duration(seconds: 20),
-        () => Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => const Homepagescreen())));
+      const Duration(seconds: 20),
+      () {
+        if (mounted) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const Homepagescreen()),
+          );
+        }
+      },
+    );
   }
 
   @override
@@ -30,14 +37,12 @@ class _OnbodingPageScreenState extends State<OnbodingPageScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
-              child: Lottie.asset(
-                'assets/animations/Animation1.json',
-                fit: BoxFit.contain,
-                width: 500,
-                height: 500,
-                repeat: true,
-              ),
+            Lottie.network(
+              "https://lottie.host/b4fc70ec-c1ed-4de0-98b7-c76e8df902c9/jwW87NPz7X.json",
+              fit: BoxFit.contain,
+              width: 150,
+              height: 150,
+              repeat: true,
             ),
           ],
         ),
