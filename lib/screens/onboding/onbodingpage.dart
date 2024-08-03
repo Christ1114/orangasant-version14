@@ -32,7 +32,7 @@ class _OnbodingPageScreenState extends State<OnbodingPageScreen> {
           children: [
             Center(
               child: Lottie.asset(
-                'assets/files/Animation1.json',
+                'assets/animations/Animation1.json',
                 fit: BoxFit.contain,
                 width: 500,
                 height: 500,
