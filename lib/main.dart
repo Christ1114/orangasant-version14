@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Oranga santé',
       theme: ThemeData(
+        fontFamily: "Intel",
         scaffoldBackgroundColor: const Color(0xFF273e32),
         primarySwatch: Colors.lightGreen,
       ),
