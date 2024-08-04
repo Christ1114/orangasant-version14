@@ -17,7 +17,7 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
     super.initState();
     // Cette partie exécutera la navigation vers la page d'accueil après 20 secondes
     Timer(
-      const Duration(seconds: 20),
+      const Duration(seconds: 5),
       () {
         if (mounted) {
           Navigator.pushReplacement(
