@@ -18,7 +18,7 @@ class Homepagescreen extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
               Colors.black.withOpacity(0.5),
-              Colors.green.withOpacity(0.6),
+              const Color(0xFF1bad0c).withOpacity(0.4),
             ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           ),
           Center(
