@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oranga_sante1/screens/home/components/Frostedglassbox.dart';
+import 'package:oranga_sante1/screens/home_a/home_a.dart';
 
 class Homepagescreen extends StatelessWidget {
   const Homepagescreen({super.key});
@@ -7,6 +8,7 @@ class Homepagescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -17,8 +19,8 @@ class Homepagescreen extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
-              Colors.black.withOpacity(0.5),
-              const Color(0xFF1bad0c).withOpacity(0.4),
+              Colors.green.withOpacity(0.2),
+              Colors.black.withOpacity(0.1),
             ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           ),
           Center(
@@ -54,6 +56,40 @@ class Homepagescreen extends StatelessWidget {
                       ),
                     ),
                   ],
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 80,
+            right: 20,
+            child: ElevatedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomeApageScreen(),
+                  ),
+                );
+              },
+              icon: const Icon(
+                Icons.arrow_forward,
+                color: Colors.black,
+              ),
+              label: const Text(
+                "Next",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+                backgroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
                 ),
               ),
             ),

@@ -44,6 +44,7 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: const Color(0xFF000000),
       body: _buildContent(),
     );
@@ -67,7 +68,7 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
             child: DefaultTextStyle(
               style: const TextStyle(
                 fontSize: 20.0,
-                color: Colors.white, // Assurer que le texte est visible
+                color: Colors.white,
               ),
               child: AnimatedTextKit(
                 animatedTexts: [
@@ -82,7 +83,7 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
                 ],
                 isRepeatingAnimation: true,
                 onTap: () {
-                  print("Tap Event");
+                  ("Tap Event");
                 },
               ),
             ),

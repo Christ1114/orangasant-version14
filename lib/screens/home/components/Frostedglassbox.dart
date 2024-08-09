@@ -11,9 +11,9 @@ class FrostedGlassBox extends StatelessWidget {
       required this.theHeight,
       required this.theChild});
 
-  final theWidth;
-  final theHeight;
-  final theChild;
+  final double theWidth;
+  final double theHeight;
+  final Widget theChild;
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +40,8 @@ class FrostedGlassBox extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.topRight,
                       colors: [
-                        Colors.white.withOpacity(0.15),
-                        Colors.white.withOpacity(0.05),
+                        Colors.green.withOpacity(0.15),
+                        Colors.black.withOpacity(0.05),
                       ])),
             ),
             Center(
