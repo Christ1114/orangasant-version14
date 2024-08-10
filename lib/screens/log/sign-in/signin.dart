@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:oranga_sante1/screens/log/EmergencySearch/emergencysearch.dart';
+import 'package:oranga_sante1/screens/log/forgetpassword/forgetpassword.dart';
+import 'package:oranga_sante1/screens/viewpage/viewpage.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -34,7 +38,7 @@ class _SignInPageState extends State<SignInPage> {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Sign in",
+                    "Sign In",
                     style: TextStyle(
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
@@ -108,8 +112,8 @@ class _SignInPageState extends State<SignInPage> {
                               obscureText: !_isPasswordVisible,
                               decoration: InputDecoration(
                                 hintText: "Password",
-                                hintStyle:
-                                    TextStyle(color: Colors.grey, fontSize: 20),
+                                hintStyle: const TextStyle(
+                                    color: Colors.grey, fontSize: 20),
                                 border: InputBorder.none,
                                 suffixIcon: IconButton(
                                   icon: Icon(
@@ -132,29 +136,48 @@ class _SignInPageState extends State<SignInPage> {
                       ),
                     ),
                     const SizedBox(height: 40),
-                    const Text(
-                      "Forget password?",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const ForgetpasswordScreen()),
+                        );
+                      },
+                      child: const Text(
+                        "Forget password?",
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
                     const SizedBox(height: 41),
-                    Container(
-                      height: 60,
-                      width: 300,
-                      margin: const EdgeInsets.symmetric(horizontal: 20),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.black,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "SIGN IN",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ViewpageScreen()),
+                        );
+                      },
+                      child: Container(
+                        height: 60,
+                        width: 300,
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.black,
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "SIGN IN",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
@@ -172,32 +195,75 @@ class _SignInPageState extends State<SignInPage> {
                     Row(
                       children: <Widget>[
                         Expanded(
-                          child: Container(
-                            height: 60,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: Colors.red),
-                            child: const Center(
-                              child: Icon(
-                                Icons.account_circle,
-                                color: Colors.white,
-                                size: 30,
+                          child: GestureDetector(
+                            onTap: () {
+                              // Action for Google login
+                            },
+                            child: Container(
+                              height: 60,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.red),
+                              child: Center(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    SvgPicture.asset(
+                                      'assets/icons/logo-google.svg',
+                                      height: 30,
+                                      width: 30,
+                                    ),
+                                    const SizedBox(width: 10),
+                                    const Text(
+                                      "Google",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
                         ),
                         const SizedBox(width: 30),
                         Expanded(
-                          child: Container(
-                            height: 60,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: const Color.fromARGB(255, 3, 51, 5)),
-                            child: const Center(
-                              child: Icon(
-                                Icons.warning,
-                                color: Colors.white,
-                                size: 30,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const EmergencysearchScreen()),
+                              );
+                            },
+                            child: Container(
+                              height: 60,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: const Color.fromARGB(255, 3, 51, 5)),
+                              child: Center(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    SvgPicture.asset(
+                                      'assets/icons/accessibility-outline.svg',
+                                      height: 30,
+                                      width: 30,
+                                    ),
+                                    const SizedBox(width: 10),
+                                    const Text(
+                                      "Emergency",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),

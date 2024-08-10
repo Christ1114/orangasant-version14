@@ -56,10 +56,10 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Lottie.network(
-            "https://lottie.host/b4fc70ec-c1ed-4de0-98b7-c76e8df902c9/jwW87NPz7X.json",
+            "https://lottie.host/9c7e4df0-2929-474d-b7ff-2f88e21e4930/n0hECifel9.json",
             fit: BoxFit.contain,
-            width: 100,
-            height: 100,
+            width: 200,
+            height: 200,
             repeat: true,
           ),
           const SizedBox(height: 10),
@@ -74,11 +74,11 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
                 animatedTexts: [
                   WavyAnimatedText(
                     'Votre santé à proximité.',
-                    speed: const Duration(milliseconds: 150),
+                    speed: const Duration(milliseconds: 151),
                   ),
                   WavyAnimatedText(
                     'Your health close at hand.',
-                    speed: const Duration(milliseconds: 150),
+                    speed: const Duration(milliseconds: 151),
                   ),
                 ],
                 isRepeatingAnimation: true,
