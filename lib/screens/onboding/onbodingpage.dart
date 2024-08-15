@@ -59,7 +59,7 @@ class _OnboardingPageScreenState extends State<OnboardingPageScreen> {
             "https://lottie.host/9c7e4df0-2929-474d-b7ff-2f88e21e4930/n0hECifel9.json",
             fit: BoxFit.contain,
             width: 200,
-            height: 200,
+            height: 150,
             repeat: true,
           ),
           const SizedBox(height: 10),
