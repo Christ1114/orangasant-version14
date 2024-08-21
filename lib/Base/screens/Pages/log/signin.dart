@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:oranga_sante1/screens/log/EmergencySearch/emergencysearch.dart';
-import 'package:oranga_sante1/screens/log/forgetpassword/forgetpassword.dart';
-import 'package:oranga_sante1/screens/viewpage/viewpage.dart';
+import 'package:oranga_sante1/Base/screens/Pages/log/emergencysearch.dart';
+import 'package:oranga_sante1/Base/screens/Pages/log/forgetpassword.dart';
+import 'package:oranga_sante1/Base/screens/utils/bottomnavigationbar.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -159,7 +159,7 @@ class _SignInPageState extends State<SignInPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const ViewpageScreen()),
+                              builder: (context) => const BottomBAR()),
                         );
                       },
                       child: Container(

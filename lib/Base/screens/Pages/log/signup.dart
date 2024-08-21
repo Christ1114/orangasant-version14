@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:oranga_sante1/screens/log/EmergencySearch/emergencysearch.dart';
-import 'package:oranga_sante1/screens/viewpage/viewpage.dart';
+import 'package:oranga_sante1/Base/screens/Pages/log/emergencysearch.dart';
+import 'package:oranga_sante1/Base/screens/Pages/viewpage.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

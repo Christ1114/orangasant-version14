@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:oranga_sante1/screens/onboding/onbodingpage.dart';
+//import 'package:oranga_sante1/Base/screens/Pages/onbodingpage.dart';
+import 'package:oranga_sante1/Base/screens/utils/bottomnavigationbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Intel",
       ),
-      home: const OnboardingPageScreen(),
+      home: const BottomBAR(),
     );
   }
 }

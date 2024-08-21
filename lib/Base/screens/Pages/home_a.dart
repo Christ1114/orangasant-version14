@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:oranga_sante1/screens/home_a/components/Frostedglassbox1.dart';
-import 'package:oranga_sante1/screens/home_a/components/Island.dart';
-import 'package:oranga_sante1/screens/log/sign-in/signin.dart';
-import 'package:oranga_sante1/screens/log/sign-up/signup.dart';
-import 'package:oranga_sante1/screens/profil/profil.dart';
+import 'package:oranga_sante1/Base/Widgets/components_home_a/Frostedglassbox1.dart';
+import 'package:oranga_sante1/Base/Widgets/components_home_a/Island.dart';
+import 'package:oranga_sante1/Base/screens/Pages/log/signin.dart';
+import 'package:oranga_sante1/Base/screens/Pages/log/signup.dart';
+import 'package:oranga_sante1/Base/screens/Pages/profil.dart';
 
 class HomeApageScreen extends StatefulWidget {
   const HomeApageScreen({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:oranga_sante1/screens/home/components/Frostedglassbox.dart';
-import 'package:oranga_sante1/screens/home_a/home_a.dart';
+import 'package:oranga_sante1/Base/Widgets/components_home/Frostedglassbox.dart';
+import 'package:oranga_sante1/Base/screens/Pages/home_a.dart';
 
 class Homepagescreen extends StatelessWidget {
   const Homepagescreen({super.key});

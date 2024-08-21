@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:oranga_sante1/screens/home/homepage.dart';
+import 'package:oranga_sante1/Base/screens/Pages/homepage.dart';
 
 class OnboardingPageScreen extends StatefulWidget {
   const OnboardingPageScreen({super.key});
