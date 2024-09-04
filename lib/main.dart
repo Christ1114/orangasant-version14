@@ -32,8 +32,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Oranga santé',
       theme: ThemeData(
-        fontFamily: "Intel",
-      ),
+          fontFamily: "Intel",
+          bottomNavigationBarTheme:
+              const BottomNavigationBarThemeData(backgroundColor: Colors.red)),
       home: const BottomBAR(),
     );
   }

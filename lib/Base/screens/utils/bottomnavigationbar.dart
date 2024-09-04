@@ -11,8 +11,6 @@ class BottomBAR extends StatefulWidget {
 }
 
 class _BottomBARState extends State<BottomBAR> {
-  // Cette dans cette zone qu'on declare les futures pages de l'app :!info pour le future dev
-
   final List<Widget> appScreens = [
     const ViewpageScreen(),
     const Text(" page 2"),
@@ -37,7 +35,7 @@ class _BottomBARState extends State<BottomBAR> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _SelectedIndex,
         onTap: _onTap,
-        selectedItemColor: Colors.red,
+        selectedItemColor: greenCircle,
         unselectedItemColor: Colors.black,
         showSelectedLabels: true,
         showUnselectedLabels: false,
